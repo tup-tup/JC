@@ -224,11 +224,10 @@ img {
 	z-index: 99;
 }
 
-.active {
-	display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+.header.active {
+	position: fixed;
+	width: 100%;
+	z-index: 99;
 }
 
 .burger__btn_active {
