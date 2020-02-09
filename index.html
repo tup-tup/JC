@@ -21,6 +21,8 @@
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Swiper CSS -->
+	<link rel="stylesheet" href="css/swiper.min.css">
 	<!-- CSS Style -->
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -79,11 +81,60 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-3 col-sm-1 d-lg-none d-flex justify-content-end">
+				<div class="col-3 col-sm-1 d-lg-none d-block justify-content-end">
 					<div class="burger">
 						<button type="button" class="burger__btn">
 							<span></span>
 						</button>
+						<div class="burger__menu">
+							<div class="burger__menu_menu">
+							<div class="logo logo__burger">
+								<a href="#" class="logo__link d-flex">
+									<span>
+										JC
+									</span>
+									<p class="logo__text">
+										legal Advisory Services
+									</p>
+								</a>
+							</div>
+							<ul class="menu menu__burger">
+								<li class="menu__item menu__item_burger" >
+									<a href="#" class="menu__link">
+										Главная
+									</a>
+								</li>
+								<li class="menu__item menu__item_burger">
+									<a href="company.html" class="menu__link">
+										О компании
+									</a>
+								</li>
+								<li class="menu__item menu__item_burger">
+									<a href="#" class="menu__link">
+										Услуги
+									</a>
+								</li>
+								<li class="menu__item menu__item_burger">
+									<a href="#" class="menu__link">
+										Контакты
+									</a>
+								</li>
+								<li class="menu__item menu__item_burger">
+									<a href="#" class="menu__link">
+										Отзывы
+									</a>
+								</li>
+							</ul>
+							<div class="phone phone__burger">
+								<button type="button" href="#" class="phone__order">
+									Заказать звонок
+								</button>
+								<a href="tel:+ 74955672815" class="phone__link">
+									+ 7 (495) 567-28-15
+								</a>
+							</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -287,77 +338,87 @@
 							Новости
 						</h2>
 						<div class="news__button">
-							<button class="news__btn">
+							<button class="news__btn news__btn_prev">
 								<img src="img/Vector-1.svg" alt="" class="button__pic">	
 							</button>
-							<button class="news__btn">
+							<button class="news__btn news__btn_next">
 								<img src="img/Vector 2.svg" alt="" class="button__pic">	
 							</button>
 						</div>
 						<div class="slider d-flex justify-content-between">
-							<div class="slider__item">
-								<div class="slider__content">
-									<div class="slider__image">
-										<img src="img/moscow.jpg" alt="tower" class="slider__img">
+							<div class="swiper-container">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<div class="slider__item">
+											<div class="slider__content">
+												<div class="slider__image">
+													<img src="img/moscow.jpg" alt="tower" class="slider__img">
+												</div>
+												<span>
+													<time pubdate datetime="2020-07-13">
+														13.07.20
+													</time>
+												</span>
+												<h6 class="slider__title">
+													Лучшие юридические компании Москвы
+												</h6>
+												<p class="slider__text">
+													Лучшие юридические компании Москвы зарабатывают свою репутацию годами. Многие из них существуют более 20 лет, а это серьёзный срок для любой организации.
+												</p>
+												<a href="#" class="slider__link link-more">
+													Читать больше
+												</a>
+											</div>
+										</div>
 									</div>
-									<span>
-										<time pubdate datetime="2020-07-13">
-											13.07.20
-										</time>
-									</span>
-									<h6 class="slider__title">
-										Лучшие юридические компании Москвы
-									</h6>
-									<p class="slider__text">
-										Лучшие юридические компании Москвы зарабатывают свою репутацию годами. Многие из них существуют более 20 лет, а это серьёзный срок для любой организации.
-									</p>
-									<a href="#" class="slider__link link-more">
-										Читать больше
-									</a>
-								</div>
-							</div>
-							<div class="slider__item">
-								<div class="slider__content">
-									<div class="slider__image">
-										<img src="img/collector.jpg" alt="company" class="slider__img">
+									<div class="swiper-slide">
+										<div class="slider__item">
+											<div class="slider__content">
+												<div class="slider__image">
+													<img src="img/collector.jpg" alt="company" class="slider__img">
+												</div>
+												<span>
+													<time pubdate datetime="2020-10-20">
+														20.10.20
+													</time>
+												</span>
+												<h6 class="slider__title">
+													Что разрешено коллекторам по закону?
+												</h6>
+												<p class="slider__text">
+													1 января этого года вступил в силу новый Федеральный закон №230-ФЗ защищающий права физических лиц при возврате задолженности, которая просрочена...
+												</p>
+												<a href="#" class="slider__link link-more">
+													Читать больше
+												</a>
+											</div>
+										</div>
 									</div>
-									<span>
-										<time pubdate datetime="2020-10-20">
-											20.10.20
-										</time>
-									</span>
-									<h6 class="slider__title">
-										Что разрешено коллекторам по закону?
-									</h6>
-									<p class="slider__text">
-										1 января этого года вступил в силу новый Федеральный закон №230-ФЗ защищающий права физических лиц при возврате задолженности, которая просрочена...
-									</p>
-									<a href="#" class="slider__link link-more">
-										Читать больше
-									</a>
-								</div>
-							</div>
-							<div class="slider__item">
-								<div class="slider__content">
-									<div class="slider__image">
-										<img src="img/firm.jpg" alt="firms" class="slider__img">
+									<div class="swiper-slide">
+										<div class="slider__item">
+											<div class="slider__content">
+												<div class="slider__image">
+													<img src="img/firm.jpg" alt="firms" class="slider__img">
+												</div>
+												<span>
+													<time pubdate datetime="2020-12-05">
+														05.12.20
+													</time>
+												</span>
+												<h6 class="slider__title">
+													Как выбрать юридическую фирму
+												</h6>
+												<p class="slider__text">
+													Как выбрать юридическую компанию, которая решит ваши проблемы профессиональным методами, а не добавит новых? – вопрос очень популярный в нашей стране...
+												</p>
+												<a href="#" class="slider__link link-more">
+													Читать больше
+												</a>
+											</div>
+										</div>
 									</div>
-									<span>
-										<time pubdate datetime="2020-12-05">
-											05.12.20
-										</time>
-									</span>
-									<h6 class="slider__title">
-										Как выбрать юридическую фирму
-									</h6>
-									<p class="slider__text">
-										Как выбрать юридическую компанию, которая решит ваши проблемы профессиональным методами, а не добавит новых? – вопрос очень популярный в нашей стране...
-									</p>
-									<a href="#" class="slider__link link-more">
-										Читать больше
-									</a>
 								</div>
-							</div>
+							</div>	
 						</div>
 					</div>
 				</div>
@@ -512,5 +573,9 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
